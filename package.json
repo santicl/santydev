@@ -1,0 +1,11 @@
+{
+  "name": "santiago_pagina",
+  "version": "1.0.0",
+  "description": "App para guardar facturas",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "santicl",
+  "license": "MIT"
+}
