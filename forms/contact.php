@@ -7,18 +7,14 @@
   $subject = $_POST['subject'];
   $message = $_POST['message'];
 
-  $header = "From: " . $mail . "\r\n";
-  $header .= "X-Mailer: PHP/" . phpversion() . "\r\n";
-  $header .= "Mime-Version: 1.0 \r\n";
-  $header .= "Content-Type: text/plain";
+  $header = "Enviado desde santydev";
 
-$send_msg = "Este mensaje es enviado por " . $name . ",\r\n";
-$send_msg .= "El Email es: " . $mail . "\r\n";
-$send_msg .= "Mensaje: " . $message . "\r\n";
+$send_msg = $message . "\nDe: " . $name
 
-$to = $receiving_email_address;
-  mail($to, $subject, utf8_decode($send_msg), $header);
-  header("Location: index.html");
+$toSantiago = $receiving_email_address;
+  mail($toSantiago, $subject, $send_msg, $header);
+  echo "<script>console.log('se envio correctamente')<script>";
+  echo "<script> setTimeout(\"location.href='index.html'\",1000)<script>";
 
 //if (isset($_POST['message'])) {
 //    if (!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['subject']) && !empty($_POST['message'])) {
