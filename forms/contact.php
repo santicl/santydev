@@ -3,7 +3,7 @@
   $receiving_email_address = 'santicsuarezdev@gmail.com';
 
   $name = $_POST['name'];
-  $mail = $_POST['email'];
+  $email = $_POST['email'];
   $subject = $_POST['subject'];
   $message = $_POST['message'];
 
