@@ -3,16 +3,6 @@ body {
   color: #4e4e4e;
 }
 
-#video-background {
-    /*font-family: eurostile, sans-serif;*/
-    /*color: transparent;*/
-    margin: auto;
-    /*background-image: url('../img/gif8.gif');*/
-    background-position: center;
-    background-size: cover;
-    -webkit-background-clip: text;
-}
-
 h1,
 h2,
 h3,
@@ -1190,6 +1180,31 @@ li {
 .widget-sidebar {
     padding: 3rem;
   }
+}
+
+ol .courses {
+  margin-bottom: 8px;
+}
+
+ol .courses button{
+  background-color: #0078ff;
+  border-radius: 15px;
+  outline: #0078ff;
+  border-color: #0078ff;
+}
+
+ol .courses button:hover {
+  background-color:aquamarine;
+  outline: aquamarine;
+  border-color: aquamarine;
+}
+
+ol .courses button a {
+  color: white;
+}
+
+ol .courses button a:hover {
+  color: black;
 }
 
 .blog-wrapper .article-title {
