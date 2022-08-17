@@ -17,7 +17,54 @@ h6 {
     margin-top: 15px;
     text-align: center;
 }
+.container-skills {
+  display: flex;
+  width: 100%;
+  gap: 8px;
+}
+.skill {
+  width: 250px;
+  height: 250px;
+  position: relative;
+}
 
+.outside {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  padding: 24px;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, .15), -6px -6px 10px -1px rgba(255, 255, 255, .7);
+}
+
+.inside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, .2), inset -4px -4px 6px -1px rgba(255, 255, 255, .7), -0.5px -0.5px 0px rgba(255, 255, 255, 1), 0.5px 0.5px 0px rgba(0, 0, 0, .15), 0px 12px 10px -10px rgba(0, 0, 0, .05);
+}
+circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 24px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  transform: translate(8px, 8px);
+  animation: animate 2s linear forwards;
+}
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@keyframes animate {
+  100% {
+    stroke-dashoffset: 165;
+  }
+}
 a {
   color: #1e1e1e;
   text-decoration: none;
@@ -881,6 +928,34 @@ li {
 
 .counter-ico {
   margin-bottom: 1rem;
+}
+.service-ico {
+  position: absolute;
+  margin-top: -35.3%;
+  margin-left: 19%;
+  background: white;
+  padding: 30px;
+  border-radius: 50%;
+}
+.service-content {
+  margin-top: 20px;
+}
+.service-box {
+  margin-top: 50px;
+  background-color: #fff;
+  padding: 2.5rem 1.3rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.box-shadow-full {
+  border-radius: 15px;
+}
+.work-img img {
+  border-radius: 15px 15px 0px 0px;
+}
+.work-box {
+  border-radius: 15px;
 }
 .counter-ico .ico-circle {
   height: 60px;
