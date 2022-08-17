@@ -929,25 +929,11 @@ li {
 .counter-ico {
   margin-bottom: 1rem;
 }
-.service-ico {
-  position: absolute;
-  margin-top: -35.3%;
-  margin-left: 19%;
-  background: white;
-  padding: 30px;
-  border-radius: 50%;
-}
+
 .service-content {
   margin-top: 20px;
 }
-.service-box {
-  margin-top: 50px;
-  background-color: #fff;
-  padding: 2.5rem 1.3rem;
-  border-radius: 1rem;
-  margin-bottom: 3rem;
-  text-align: center;
-}
+
 .box-shadow-full {
   border-radius: 15px;
 }
